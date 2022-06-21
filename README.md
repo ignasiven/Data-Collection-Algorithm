@@ -38,8 +38,9 @@ f_{33}= & \sum_{j\in\Gamma}\Bigg(\log\bigg(\sqrt{\sum_{k\in{\mathcal N}}\Big(v_{
 f_{34}= & \sum_{j\in\Gamma}\Bigg(\log_{2}\bigg(\sqrt{\sum_{k\in{\mathcal N}}\Big(v_{k}-V_{k,j}\Big)^{2}}\bigg)+\log_{2}\bigg(\sqrt{\sum_{k\in{\mathcal N}}\Big(\theta_{k}-\Theta_{k,j}\Big)^{2}}\bigg)\Bigg)\\
 f_{35}= & \sum_{j\in\Gamma}\Bigg(\exp\bigg(\sum_{k\in{\mathcal N}}\Big(v_{k}-V_{k,j}\Big)^{2}\bigg)\Bigg)^2+\sum_{j\in\Gamma}\Bigg(\exp\bigg(\sum_{k\in{\mathcal N}}\Big(\theta_{k}-\Theta_{k,j}\Big)^{2}\bigg)\Bigg)^2\\
 f_{36}= & \sum_{j\in\Gamma}\Bigg(\log\bigg(\sqrt{\sum_{k\in{\mathcal N}}\Big(v_{k}-V_{k,j}\Big)^{2}}\bigg)+\log\bigg(\sqrt{\sum_{k\in{\mathcal N}}\Big(\theta_{k}-\Theta_{k,j}\Big)^{2}}\bigg)\Bigg)+\sum_{j\in\Gamma}\Bigg(\log\bigg(\sqrt{\sum_{i\in{\mathcal G}}\Big(p_{i}-P_{i,j}\Big)^{2}}\bigg)+\log\bigg(\sqrt{\sum_{i\in{\mathcal G}}\Big(q_{i}-Q_{i,j}\Big)^{2}}\bigg)\Bigg)\\
-f_{37}= & \sum_{j\in\Gamma}\Bigg(\log\bigg(\sum_{i\in{\mathcal G}}\left|p_{i}-P_{i,j}\right|\bigg)+\log\bigg(\sum_{i\in{\mathcal G}}\left|q_{i}-Q_{i,j}\right|\bigg)+\sum_{j\in\Gamma}\Bigg(\log\bigg(\sum_{k\in{\mathcal N}}\left|v_{k}-V_{k,j}\right|\bigg)\Bigg)\\
-f_{38}= & \sum_{j\in\Gamma}\Bigg(\sum_{i\in{\mathcal G}}\log\left(\Big(p_{i}-P_{i,j}\Big)^{2}\right)+\sum_{i\in{\mathcal G}}\log\left(\Big(q_{i}-Q_{i,j}\Big)^{2}\right)\Bigg)\\
-f_{39}= & \sum_{j\in\Gamma}\Bigg(\sum_{i\in{\mathcal G}}\log\left(|p_{i}-P_{i,j}|\right)+\sum_{i\in{\mathcal G}}\log\left(|q_{i}-Q_{i,j}|\right)\Bigg).
+f_{37}= & \sum_{j\in\Gamma}\Bigg(\log\bigg(\sqrt{\sum_{k\in{\mathcal N}}\Big(v_{k}-V_{k,j}\Big)^{2}}\bigg)\Bigg)+\sum_{j\in\Gamma}\Bigg(\log\bigg(\sqrt{\sum_{i\in{\mathcal G}}\Big(p_{i}-P_{i,j}\Big)^{2}}\bigg)+\log\bigg(\sqrt{\sum_{i\in{\mathcal G}}\Big(q_{i}-Q_{i,j}\Big)^{2}}\bigg)\Bigg)\\
+f_{38}= & \sum_{j\in\Gamma}\Bigg(\log\bigg(\sum_{i\in{\mathcal G}}\left|p_{i}-P_{i,j}\right|\bigg)+\log\bigg(\sum_{i\in{\mathcal G}}\left|q_{i}-Q_{i,j}\right|\bigg)+\sum_{j\in\Gamma}\Bigg(\log\bigg(\sum_{k\in{\mathcal N}}\left|v_{k}-V_{k,j}\right|\bigg)\Bigg)\\
+f_{39}= & \sum_{j\in\Gamma}\Bigg(\sum_{i\in{\mathcal G}}\log\left(\Big(p_{i}-P_{i,j}\Big)^{2}\right)+\sum_{i\in{\mathcal G}}\log\left(\Big(q_{i}-Q_{i,j}\Big)^{2}\right)\Bigg)\\
+f_{40}= & \sum_{j\in\Gamma}\Bigg(\sum_{i\in{\mathcal G}}\log\left(|p_{i}-P_{i,j}|\right)+\sum_{i\in{\mathcal G}}\log\left(|q_{i}-Q_{i,j}|\right)\Bigg).
 \end{align*}
 $$
