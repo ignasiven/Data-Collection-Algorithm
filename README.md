@@ -1,6 +1,5 @@
 # Data-Collection-Algorithm
 Optimization-Based Exploration of the Feasible Power Flow Space for OPF Data Collection
-
 $$
 \begin{align*}f_{1}= & \sum_{j\in\Gamma}\Bigg(\sum_{i\in{\mathcal G}}\Big(p_{i}-P_{i,j}\Big)^{2}+\sum_{i\in{\mathcal G}}\Big(q_{i}-Q_{i,j}\Big)^{2}\Bigg)\\
 f_{2}= & \sum_{j\in\Gamma}\Bigg(\sum_{i\in{\mathcal G}}\Big(p_{i}-P_{i,j}\Big)^{3}+\sum_{i\in{\mathcal G}}\Big(q_{i}-Q_{i,j}\Big)^{3}\Bigg)\\
@@ -44,4 +43,3 @@ f_{39}= & \sum_{j\in\Gamma}\Bigg(\sum_{i\in{\mathcal G}}\log\left(\Big(p_{i}-P_{
 f_{40}= & \sum_{j\in\Gamma}\Bigg(\sum_{i\in{\mathcal G}}\log\left(|p_{i}-P_{i,j}|\right)+\sum_{i\in{\mathcal G}}\log\left(|q_{i}-Q_{i,j}|\right)\Bigg).
 \end{align*}
 $$
-
