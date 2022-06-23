@@ -1,6 +1,6 @@
 # Data-Collection-Algorithm
 ## Optimization-Based Exploration of the Feasible Power Flow Space for OPF Data Collection
-Following is a subset of the functions which were experimentally tested in this paper. In the following, $\Gamma$ is the set of all previously collected data points, $\mathcal G$ is the set of dispatchable generator buses, and $\mathcal N$ is the set of all buses. Lower case variables are decision variables (e.g., $p_i$), while upper case variables are numerical data points (e.g., $P_{i,j}$). In our tests, we also attempted to normalize all variables using statistical metrics from the exhaustive set. This normalization aimed at scaling all variable distances between zero and one. However, this strategy is omitted from this paper, since it did not present significant improvements in the numerical study.
+Following is a subset of the functions which were experimentally tested in this paper. In the following, $\Gamma$ is the set of all previously collected data points, $G$ is the set of dispatchable generator buses, and $N$ is the set of all buses. Lower case variables are decision variables (e.g., $p_{i}$), while upper case variables are numerical data points (e.g., $P_{i,j}$). In our tests, we also attempted to normalize all variables using statistical metrics from the exhaustive set. This normalization aimed at scaling all variable distances between zero and one. However, this strategy is omitted from this paper, since it did not present significant improvements in the numerical study.
 
 $$f_{1}=  \sum_{j\in\Gamma}\Bigg(\sum_{i\in{\mathcal G}}\Big(p_{i}-P_{i,j}\Big)^{2}+\sum_{i\in{\mathcal G}}\Big(q_{i}-Q_{i,j}\Big)^{2}\Bigg)$$
 
@@ -83,10 +83,19 @@ $$f_{39}=  \sum_{j\in\Gamma}\Bigg(\sum_{i\in{\mathcal G}}\log\left(\Big(p_{i}-P_
 
 $$f_{40}=  \sum_{j\in\Gamma}\Bigg(\sum_{i\in{\mathcal G}}\log\left(|p_{i}-P_{i,j}|\right)+\sum_{i\in{\mathcal G}}\log\left(|q_{i}-Q_{i,j}|\right)\Bigg).$$
 
+# N dimension Hausdorff of 2 dimension sets
+
+This section will give special attention to the multi-dimensional Hausdorff distances computed after the euclidean distance of two variables is calculated. This numerical study considers two combinations: the complex power distance and the active power with the voltage magnitude distance.
+
+The N dimension Hausdorff distance algorithm is applied to all the functions listed above in five test systems of the IEEE library: 3-bus, 5-bus, 14-bus, 30-bus, and 57-bus.
+
 ## Complex power values
+
+The following table shows the values of the complex power Hausdorff distance.
+
 |F     | IEEE3    | IEEE5     | IEEE 14  | IEEE 30  | IEEE 57  |
 |     :---:      |     :---:      |     :---:      |    :---:      |     :---:      |     :---:      |
-|1     | 0,627106 & 6,569731  | 0,494571 | 0,335585 | 4,477464 |
+|1     | 0,627106 | 6,569731  | 0,494571 | 0,335585 | 4,477464 |
 |2     | DNF      | DNF       | DNF      | DNF      | DNF      |
 |3     | 0,480737 | 3,4464    | DNF      | 0,250789 | 2,424641 |
 |4     | 0,511438 | 3,320618  | 0,222556 | 0,23554  | 1,925264 |
@@ -126,6 +135,9 @@ $$f_{40}=  \sum_{j\in\Gamma}\Bigg(\sum_{i\in{\mathcal G}}\log\left(|p_{i}-P_{i,j
 |39-40 |DNF       | DNF       | DNF      | DNF      | DNF|
 
 ## Active power and voltage magnitude values
+
+The following table compares a multi-dimensional profile with the euclidean distances of voltage magnitude and active power generation.
+
 |F     | IEEE3   |  IEEE5    | IEEE14   | IEEE30   | IEEE57   |
 |     :---:      |     :---:      |     :---:      |    :---:      |     :---:      |     :---:      |
 |1     | 0,450036|  2,825208 |0,390939  | 0,131712 | 4,413723 |
