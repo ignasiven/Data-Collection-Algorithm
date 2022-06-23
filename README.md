@@ -85,9 +85,13 @@ $$f_{40}=  \sum_{j\in\Gamma}\Bigg(\sum_{i\in{\mathcal G}}\log\left(|p_{i}-P_{i,j
 
 # N dimension Hausdorff of 2 dimension sets
 
-This section will give special attention to the multi-dimensional Hausdorff distances computed after the euclidean distance of two variables is calculated. This numerical study considers two combinations: the complex power distance and the active power with the voltage magnitude distance.
+This section shows in tables the multi-dimensional Hausdorff distances after 301 iterations computed after the euclidean distance of two variables is calculated. This numerical study considers two combinations: the complex power distance and the active power with the voltage magnitude distance.
 
 The N dimension Hausdorff distance algorithm is applied to all the functions listed above in five test systems of the IEEE library: 3-bus, 5-bus, 14-bus, 30-bus, and 57-bus.
+
+The solver chosen for this task is the Ipopt, an interior point optimizer. It is an open-source software for large-scale non-linear optimization. This optimizer works swiftly with the data of this report. However, there are some functions which are not capable of optimizing. Hence the results stated as "DNF" mean that the function could not be solved with the used software. It might be solvable with a more powerful and more expensive optimizer, but they will not qualify for the post-analysis in this report.
+
+Furthermore, the "DNF" status encloses a wide range of different errors. From maximum iterations exceeded to an error in the step computation, to steps size becomes too small. The reasons they cannot be solved will not be considered, and they will just be labelled as "DNF".
 
 ## Complex power values
 
