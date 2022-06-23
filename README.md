@@ -1,5 +1,6 @@
 # Data-Collection-Algorithm
-Optimization-Based Exploration of the Feasible Power Flow Space for OPF Data Collection
+## Optimization-Based Exploration of the Feasible Power Flow Space for OPF Data Collection
+Following is a subset of the functions which were experimentally tested in this paper. In the following, $\Gamma$ is the set of all previously collected data points, $\mathcal G$ is the set of dispatchable generator buses, and $\mathcal N$ is the set of all buses. Lower case variables are decision variables (e.g., $p_i$), while upper case variables are numerical data points (e.g., $P_{i,j}$). In our tests, we also attempted to normalize all variables using statistical metrics from the exhaustive set. This normalization aimed at scaling all variable distances between zero and one. However, this strategy is omitted from this paper, since it did not present significant improvements in the numerical study.
 
 $$f_{1}=  \sum_{j\in\Gamma}\Bigg(\sum_{i\in{\mathcal G}}\Big(p_{i}-P_{i,j}\Big)^{2}+\sum_{i\in{\mathcal G}}\Big(q_{i}-Q_{i,j}\Big)^{2}\Bigg)$$
 
